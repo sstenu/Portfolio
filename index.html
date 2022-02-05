@@ -1,50 +1,231 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (min-width: 700px)" href="tyyli.css">
-    <link rel="stylesheet" media="screen and (max-width: 699px)" href="tyylipieni.css">
-</head>
-<body>
-    <div id="tausta">
-        <h1>Marika Stenberg Portfolio</h1>
+<title>Marika Stenberg Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-        <h2>Musa-Ope</h2>
-        <a href="https://www.figma.com/proto/IVKTMw6xOQvKEXCt5FLg7z/Musa-Op?scaling=scale-down&page-id=0%3A1&starting-point-node-id=92%3A10&node-id=92%3A11">Klikkaa tästä Musa-Opeen / Click here to open Musa-Ope</a>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="mina1.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <a href="https://www.facebook.com/marika.stenberg.7/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/marikastenberg/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <a href="https://www.linkedin.com/in/marika-stenberg/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Portfolio</b></h1>
+    <h3>Click on the images to access the projects</h3>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://www.figma.com/proto/IVKTMw6xOQvKEXCt5FLg7z/Musa-Op?scaling=scale-down&page-id=0%3A1&starting-point-node-id=92%3A10&node-id=92%3A11"><img src="Musa-Ope.png" alt="Musa_ope" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Musa-Ope</b></p>
         <p>Musa-Ope on AR-laseja hyödyntävä pianonsoiton oppimiseen tarkoitettu sovellus. Linkki avautuu Figmaan, jossa on käyttöliittymän luonnokset sekä user flow toteutettuna. Projekti toteutettiin Innovointi ja projektityö -kurssilla, jossa ideana oli kehittää asiakkaan tarpeeseen sovellus. Projektissa oli mukana kuusi jäsentä.</p>
         <p>Musa-Ope is an application created for learning to play the piano. It utilizes AR-glasses. Link opens to Figma where the UI drafts are. You can also see the user flow. The project was part of the Innovation and project work -course where the idea was to develop an application for the customer's needs. The project involved six members.</p>
-        <br>
-        
-        <h2>Waltti Mobiili -sovellus</h2>
-        <a href="https://www.figma.com/proto/dF52lbFWWNmXs44usAsZ28/Waltti-aloitus?scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A10&node-id=5%3A4">Klikkaa tästä Waltti Mobiili -sovellukseen / Click here to open Waltti Mobil</a>
-        <p>Waltti Mobiili on lipunosto- ja reitinhakusovellus, joka toimii mm. Hämeenlinnassa. Kehitin Käyttäjäkokemus-kurssilla sovellusta käyttäjäystävällisemmäksi kyselyn sekä myöhemmin haastatteluiden perusteella.</p>
-        <p>Waltti Mobil is a ticket purchase and route search application that works e.g. in Hämeenlinna. In the User Experience -course, I developed the application to be more user-friendly based on a survey and later interviews.</p>
-        <br>
-        
-        <h2>Riksupeli</h2>
-        <a href="https://sstenu.github.io/Riksupeli/">Klikkaa tästä Riksupeliin / Click here to play Riksu game</a>
+    </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://sstenu.github.io/Lopputyo-digitekniikat/"><img src="Hääilmoittautuminen.png" alt="Hääilmoittautuminen" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p><b>Hääilmoittautuminen</b></p>
+          <p>Suunnittelin ja toteutin sivuston osana Digitekniikat-kurssia. Kurssilla harjoiteltiin nettisivujen luomista.</p>
+          <p>I designed and created the site as part of the Digital Techniques -course. The aim of the course was to practise creating websites.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+        <a href="https://www.figma.com/proto/dF52lbFWWNmXs44usAsZ28/Waltti-aloitus?scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A10&node-id=5%3A4"><img src="Waltti Mobiili.png" alt="Waltti Mobiili" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p><b>Waltti Mobiili -sovellus</b></p>
+          <p>Waltti Mobiili on lipunosto- ja reitinhakusovellus, joka toimii mm. Hämeenlinnassa. Kehitin Käyttäjäkokemus-kurssilla sovellusta käyttäjäystävällisemmäksi kyselyn sekä myöhemmin haastatteluiden perusteella.</p>
+          <p>Waltti Mobil is a ticket purchase and route search application that works e.g. in Hämeenlinna. In the User Experience -course, I developed the application to be more user-friendly based on a survey and later interviews.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/sstenu/Veneohjelma"><img src="Veneohjelma.png" alt="Veneohjelma" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p><b>Veneohjelma</b></p>
+          <p>Ohjelmointi 2 -kurssilla harjoittelimme tiedon hakemista, luomista, muokkaamista ja poistamista tietokannasta. Lataa tiedostot, jotta voit kokeilla ohjelman toimintaa. Koneessasi tulee olla asennettuna lisäksi Eclipse tai vastaavanlainen ohjelma.</p>
+          <p>In the Programming 2 -course, we practiced retrieving, creating, editing, and deleting data from a database. Download the files to try out the program. You must also have Eclipse or a similar program installed on your computer.</p>
+        </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://sstenu.github.io/Riksupeli/"><img src="Riksupeli.png" alt="Riksupeli" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+        <p><b>Riksupeli</b></p>
         <p>Suunnittelin ja toteutin Digiprojekti-kurssilla toiviman selainpelin. Peli on kehitetty tunnetusta juomapelistä.</p>
-        <p>I designed and created the browser game in the Digiproject-course. The game is developed from a well-known drinking game.<p>
-        <br>
-        
-        <h2>Asiakasohjelma</h2>
-        <a href="https://github.com/sstenu/Ohjelmointi-2-asiakasohjelma-JavaScript.git">Asiakasohjelma Ohjelmointi 2-kurssilla / Client program in Programming 2 -course</a><br>
-        <a href="https://github.com/sstenu/Asiakasohjelma-ajaxilla.git">Asiakasohjelma Ohjelmointi 2-kurssilla AJAXia hyödyntäen / Client program in Programming 2 -course using AJAX</a>
-        <p>Ohjelmointi 2 -kurssilla harjoittelimme tiedon hakemista, luomista, muokkaamista ja poistamista tietokannasta. Lataa tiedostot, jotta voit kokeilla ohjelman toimintaa. Koneessasi tulee olla asennettuna lisäksi Eclipse tai vastaavanlainen ohjelma.</p>
-        <p>In the Programming 2 -course, we practiced retrieving, creating, editing, and deleting data from a database. Download the files to try out the program. You must also have Eclipse or a similar program installed on your computer.</p>
-        <br>
-        
-        <h2>Nettisivut häihin</h2>
-        <a href="https://sstenu.github.io/Lopputyo-digitekniikat/">Klikkaa tästä nettisivustolle</a>
-        <p>Suunnittelin ja toteutin sivuston osana Digitekniikat-kurssia. Kurssilla harjoiteltiin nettisivujen luomista.</p>
-        <p>I designed and created the site as part of the Digital Techniques -course. The aim of the course was to practise creating websites.</p>
-        <br>
-        
-        <h2>Keravan Energia</h2>
-        <a href="https://www.figma.com/proto/fQBbkCj5WeEbkRyLuDkADx/Keravan-Energia--sovellus?scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1&node-id=2%3A6">Klikkaa tästä Keravan Energiaan</a>
+        <p>I designed and created the browser game in the Digiproject-course. The game is developed from a well-known drinking game.</p>
+    </div>
+    </div>
+    <div class="w3-third w3-container">
+      <a href="https://www.figma.com/proto/fQBbkCj5WeEbkRyLuDkADx/Keravan-Energia--sovellus?scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1&node-id=2%3A6"><img src="Keravan Energia.png" alt="Keravan Energia" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Keravan Energia</b></p>
         <p>Digitaalisen sovelluksen luominen Keravan Energialle. Linkki avautuu Figmaan, jossa on käyttäliittymän luonnos. Projekti toteutettiin Digitaalinen liiketoiminta -kurssilla ja siihen osallistui kolmen henkilöä. Projekti sisälsi kuuden käyttäjän haastattelun, jonka perusteella sovellus ja sen luonnos kehitettiin.</p>
         <p>Creating a digital application for Keravan Energia. The link opens to Figma where the UI drafts are. The project was part of the Digital Business -course and involved three members. The project included interviews with six users, on the basis of which the application and its drafts were developed.</p>
     </div>
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="IMG-20210812-WA0007.jpeg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="profiilikuva.jpg" alt="Me" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-container" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>Opiskelen parhaillaan tietojenkäsittelyä Haaga-Heliassa, erikoistuen Digitaalisiin palveluihin ja Ohjelmistotuotantoon. 
+        Olen kiinnostunut tietotekniikasta, koska haluan olla osa alaa, joka luo joka päivä jotain uutta ja jännittävää. Valitsin Digitaaliset palvelut ja Ohjelmistotuotannon pääaineikseni, koska haluan kehittää käyttöliittymiä, jotka ovat helppokäyttöisiä ja selkeitä. 
+        Minulle on luontaista arvioida jokaista käyttämääni sovellusta, oli se sitten työ- tai vapaa-ajalla.
+      Työskentelytapani on aktiivinen ja oma-aloitteinen, toiset ovat kuvailleet minua myös johtamiskykyiseksi. 
+      
+  </p>
+    <p>I am currently studying Business Information Technology at Haaga-Helia, specializing in Digital services and Software engineering. 
+        I am interested in information and communication technology because I want to be part of an industry that creates something new and exciting every day. I chose Digital services and Software engineering as my major because I want to develop user interfaces that are easy to use and clear to users. 
+        It’s natural for me to evaluate every piece of software or system whether it’s at work or in my free time.
+      My working style is active and self-driven, others have described me also as a capable leader. 
+      
+      </p> 
+    <hr>
+    
+    <h4>Profile Studies</h4>
+    <!-- Progress bars / Skills -->
+    <div class="w3-row-padding w3-padding-16" id="about">
+        <div class="w3-col m4">
+          <p>Orientaatio ICT-infrastruktuuriin<br>
+              Orientaatio ohjelmistotuotantoon<br>
+              Orientaatio digitaalisiin palveluihin<br>
+              Orientaatio ICT ja liiketoimintaan<br>
+              ICT-palvelut ja hankinnat<br>
+              Käyttäjäkokemus<br>
+              Digitaalisen palvelun protoilu<br>
+              Digitaalinen liiketoiminta<br>
+              Digitekniikat<br>
+              Digiprojekti<br>
+              Ohjelmointi 1<br>
+              Ohjelmointi 2<br>
+              Web-tekniikat<br>
+              Tietokannat ja tiedonhallinta<br>
+              Tietokoneen toiminnan perusteet
+          </p>
+        </div>
+        <div class="w3-col m4" style="text-align: center">
+            <p>4<br>
+                5<br>
+                5<br>
+                5<br>
+                4<br>
+                5<br>
+                5<br>
+                5<br>
+                5<br>
+                5<br>
+                4<br>
+                5<br>
+                4<br>
+                5<br>
+                H
+            </p>
+      </div>
+        <div class="w3-col m4">
+          <p>Orientation to ICT Infrastructures <br>
+              Orientation to Software Engineering <br>
+              Orientation to Digital Services <br>
+              Orientation to Business and ICT <br>
+              ICT Services and Purchasing<br>
+              User Experience <br>
+              Prototyping of Digital Services <br>
+              Digital Business<br>
+              Digital Technology<br>
+              Digital Project <br>
+              Programming 1<br>
+              Programming 2<br>
+              Web-technologies <br>
+              Databases and Data Management<br>
+              Computer fundamentals<br>
+        </div>
+    </div>
+    <hr>
+    
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>stenberg.marika@outlook.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Hämeenlinna</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>0503622635</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
 </body>
-</html> 
+</html>
